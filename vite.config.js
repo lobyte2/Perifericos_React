@@ -4,11 +4,9 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // ▼▼▼ AGREGA ESTA SECCIÓN ▼▼▼
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/setupTests.js', // Opcional, pero recomendado
+    setupFiles: './src/setupTests.js',
   },
-  // ▲▲▲ FIN DE LA SECCIÓN ▲▲▲
 })
